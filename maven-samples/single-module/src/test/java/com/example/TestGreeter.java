@@ -27,12 +27,7 @@ public class TestGreeter {
   }
   
 
-  @Test
-  public void intenionally_Failed() {
-    assertTrue(true);
-  }
-  
-
+ 
   @Test
   public void greetShouldIncludeGreetingPhrase() {
     String someone = "World";
