@@ -19,12 +19,17 @@ public class TestGreeter {
   public void setup() {
     greeter = new Greeter();
   }
-
-  @Test
+    @Test
   public void greetShouldIncludeTheOneBeingGreeted() {
     String someone = "World";
 
     assertThat(greeter.greet(someone), containsString(someone));
+  }
+  
+
+  @Test
+  public void intenionally_Failed() {
+    assertTrue(false);
   }
   
 
