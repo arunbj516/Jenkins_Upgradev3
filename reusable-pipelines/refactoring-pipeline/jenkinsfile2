@@ -5,15 +5,15 @@ pipeline {
         RELEASE_VERSION = 'R.2'
     }
     stages {
-        stage('Audit tools') {
-            steps {
-                sh '''
-                  git version
-                  java -version
-                  mvn -version
-                '''
-            }
-        }
+//        stage('Audit tools') {
+//            steps {
+//                sh '''
+//                  git version
+//                  java -version
+//                  mvn -version
+//                '''
+//            }
+//        }
 
         stage('Unit Test') {
             steps {
